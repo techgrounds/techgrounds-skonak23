@@ -5,7 +5,7 @@ Git is een versie beheersysteem die er op gericht is wijzigingen in bestanden te
 Github is een web-based hosting service voor Git repositories. Het biedt een platform aan voor ontwikkelaars om code op ste slaan, te delen en samen te werken aan projecten. 
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+
 - [x] Repository (repo) is een opslagplaats waar bestanden, mappen en geschiedenis van een project bewaard worden.
 - [x] Main / Master is de "hoofdbranche" waar de meest robuuste en volledige versies van de code wordt bewaard.
 - [x] Branch verwijst naar een zogezegde "tak" binnen een Git-repository waar wijzigingen aangebracht kunnen worden in een codebase zonder de 'Mainbranche' te beinvloeden.
@@ -36,7 +36,7 @@ Doel van dit assignment is het begrijpen en toepassen van de basisprincipes van 
 - [x] Repository op je Github account aanmaken voor gebruik
 - [x] Permissies geven aan teammates voor gebruik van jou repository
 - [x] Code/bestanden naar je repo pushen
-- [x} Repo van je peers pullen of clonen
+- [x] Repo van je peers pullen of clonen
 
 
 ### Opdracht 2:
@@ -48,8 +48,10 @@ Doel van dit assignment is het begrijpen en toepassen van de basisprincipes van 
 
 ### Gebruikte bronnen
 
-https://www.datacamp.com/tutorial/git-push-pull : 		Korte beschrijvingen van 'git' commands voor gebruik met git bash
-https://rogerdudler.github.io/git-guide/ : 			Simpele uitleg over de basisprincipes van Git
+https://www.datacamp.com/tutorial/git-push-pull : 			Korte beschrijvingen van 'git' commands voor gebruik met git bash
+https://rogerdudler.github.io/git-guide/ : 				Simpele uitleg over de basisprincipes van Git
+https://github.com/techgrounds/git-github-fundamentals-agcdtmr :	Basics van Git-Github
+
 
 
 ### Ervaren problemen
