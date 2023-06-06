@@ -58,9 +58,38 @@ Doel van dit assignment is het begrijpen en toepassen van de basisprincipes van 
 
 ### Ervaren problemen
 
+Problemen ervaren met de main en master branche waardoor 'push-commands' niet uitgevoerd werden. Opgelost door wijzigen van persoonlijke repo naar portfolio repo techgrounds. Zie onderstaande afbeelding:
+
+![change-origin-to-push-correct-remote](../00_includes/Change-origin-to-push-correct-remote.png)
+
 
 ### Resultaat
-Hieronder weergegeven ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+
+Hoofdpagina account op Github en de eerste repository:
+![Nieuw account en repository Github](../00_includes/Hoofdpagina Github - First_Repo.png)
+
+Permissies geven aan teammates voor gebruik van jou repository:
+![Collaborators-added](../00_includes/Added-collaborators.png)
+
+Het clonen en pushen van code naar je repository:
+![Git clone & push command](../00_includes/Git - Clone + Push.png)
+
+Een pull/clone commando van een peer repo:
+![Git pull command from peer repo](../00_includes/Pull-rep-peer.png)
+
+Opzetten van portfolio repository voor techgrounds assignments:
+![Git clone - techgrounds portfolio repo](../00_includes/new-rep-portfolio.png)
+
+Pushen van notities naar portfolio repo:
+![Git push - notities naar week1 folder](../00_includes/notities-push.png)
+
+
+
+
+
+
+
 
 
 
