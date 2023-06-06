@@ -32,18 +32,18 @@ Doel van dit assignment is het begrijpen en toepassen van de basisprincipes van 
 
 ### Opdracht 1:
 
--[x] Github account aanmaken
--[x] Repository op je Github account aanmaken voor gebruik
--[x] Permissies geven aan teammates voor gebruik van jou repository
--[x] Code/bestanden naar je repo pushen
--[x} Repo van je peers pullen of clonen
+- [x] Github account aanmaken
+- [x] Repository op je Github account aanmaken voor gebruik
+- [x] Permissies geven aan teammates voor gebruik van jou repository
+- [x] Code/bestanden naar je repo pushen
+- [x} Repo van je peers pullen of clonen
 
 
 ### Opdracht 2:
 
--[x] Een nieuwe repo aanmaken voor je portfolio en de verwerking van assignments
--[x] Gemaakte notities van de assignment(s) pushen naar de repo
--[x] Het delen van de repo met je learning coach   
+- [x] Een nieuwe repo aanmaken voor je portfolio en de verwerking van assignments
+- [x] Gemaakte notities van de assignment(s) pushen naar de repo
+- [x] Het delen van de repo met je learning coach   
 
 
 ### Gebruikte bronnen
