@@ -19,9 +19,9 @@ Github is een web-based hosting service voor Git repositories. Het biedt een pla
 
 ## Benodigdheden
 
-- [x] Een GitHub account (https://github.com)
-- [x] Git (https://git-scm.com/downloads)
-- [x] Een teksteditor (IDE): bv. 'Visual Studio Code'
+- [x] <strong>Een GitHub account</strong> (https://github.com)
+- [x] <strong>Git</strong> (https://git-scm.com/downloads)
+- [x] <strong>Een teksteditor</strong> (IDE): bv. 'Visual Studio Code'
 
 
 ## Opdrachtbeschrijving
@@ -48,9 +48,11 @@ Doel van dit assignment is het begrijpen en toepassen van de basisprincipes van 
 
 ### Gebruikte bronnen
 
-https://www.datacamp.com/tutorial/git-push-pull : 			Korte beschrijvingen van 'git' commands voor gebruik met git bash
-https://rogerdudler.github.io/git-guide/ : 				Simpele uitleg over de basisprincipes van Git
-https://github.com/techgrounds/git-github-fundamentals-agcdtmr :	Basics van Git-Github
+| Bron      | Beschrijving |
+| ----------- | ----------- |
+| https://www.datacamp.com/tutorial/git-push-pull     | Korte beschrijvingen van 'git' commands voor gebruik met git bash       |
+| https://rogerdudler.github.io/git-guide/   | Simpele uitleg over de basisprincipes van Git        |
+| https://github.com/techgrounds/git-github-fundamentals-agcdtmr | Basisinformatie over het gebruik van Github |
 
 
 
@@ -58,4 +60,8 @@ https://github.com/techgrounds/git-github-fundamentals-agcdtmr :	Basics van Git-
 
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Hieronder weergegeven ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+
+
+
+ 
