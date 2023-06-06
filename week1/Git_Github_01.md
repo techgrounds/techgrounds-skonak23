@@ -68,7 +68,7 @@ Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende be
 
 Hoofdpagina account op Github en de eerste repository:
 
-![Nieuw account en repository Github](../00_includes/Hoofdpagina Github - First_Repo.png)
+![Nieuw account en repository Github](../00_includes/Hoofdpagina-Github-First_Repo.png)
 
 Permissies geven aan teammates voor gebruik van jou repository:
 
@@ -76,7 +76,7 @@ Permissies geven aan teammates voor gebruik van jou repository:
 
 Het clonen en pushen van code naar je repository:
 
-![Git clone & push command](../00_includes/Git - Clone + Push.png)
+![Git clone & push command](../00_includes/Git-Clone+Push.png)
 
 Een pull/clone commando van een peer repo:
 
