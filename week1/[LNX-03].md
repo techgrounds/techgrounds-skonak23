@@ -1,4 +1,4 @@
-[LNX-03]
+# [LNX-03]
 
 In Linux CLI kun je met bepaalde commando's verwijzen naar gegevens. In deze assignment gaan we aan de slag met de verschillende commando's die in het kader van 'verwijzen'en 'verwerken' binnen de CLI te pas gaat.
  
@@ -46,7 +46,7 @@ Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende be
 
 Echo command en output redirection voor een nieuw zin in textbestand:
 
-![LNX-03-ex1](../00_includes/LNX-03)
+![LNX-03-ex1](../00_includes/LNX-03/LNX-03-ex1.png)
 
 Weergave van de inhoud van een textbestand met "techgrounds" uitgelicht:
 
