@@ -52,5 +52,5 @@ Het aanmaken van een nieuwe user met wachtwoord en rootprivileges (su).
 
 Weergave van de locatie waar bestanden zijn opgeslagen met daarin gegevens zoals gebruikers, wachtwoorden en groepen.
 
-![LNX-04-ex2](../00_includes/LNX-03/00_includes/LNX-04/LNX-04-ex2.png)
+![LNX-04-ex2](../00_includes/LNX-04/LNX-04-ex2.png)
 
