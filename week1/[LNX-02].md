@@ -41,15 +41,34 @@ Doel van deze opdracht is het leren omgaan met directories en bestanden in de CL
 
 ### Ervaren problemen
 
-Problemen ervaren met permissies van de public key. Na troubleshooten erachter gekomen dat de gebruikte root folder "c:/" niet de juisten rechten verleent om met de juiste permissies een connectie te leggen met de VM.
+Problemen ervaren met permissies voor het aanmaken of wijzigen van bestanden.
+<strong>Oplossing:</strong> d.m.v. **sudo chown** commando de juiste rechten ingesteld.
 
-<strong>Oplossing:</strong> Veranderen van de rootfolder waar de key zich bevind.
-
-![Change-directory](../00_includes/correcte-directory-pemkey.png)
+![Change-permissies](../00_includes/LNX-02/ownership-permissies.png)
 
 
 ### Resultaat
 Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
 
-Verbinding met VM successvol, volgend een identity controle met de command: **whoami** :
-![ssh-connection-whoami](../00_includes/resultaat-ssh-whoami.png)
+Huidige folder:
+
+![huidige-folder](../00_includes/LNX-02/show current directory.png)
+
+Home folder met lijstweergave van alle bestanden en folders:
+
+![lijst-weergave](../00_includes/LNX-02/LNX-02_listings-home.png)
+
+Techgrounds folder aangemaakt:
+
+![techgrounds-direct](../00_includes/LNX-02/home-create-techgrounds-directory.png)
+
+Bestand met text aangemaakt:
+
+![techgrounds-direct](../00_includes/LNX-02/create-file-with-text.png)
+
+Relative en Absolute weergave:
+
+![techgrounds-direct](../00_includes/LNX-02/Weergave-absolute-relative-path.png)
+
+
+
