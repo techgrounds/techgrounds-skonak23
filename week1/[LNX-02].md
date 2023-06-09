@@ -1,9 +1,11 @@
 # [LNX-02]
 
+## Bestanden en Folders
+
 Linux gebruikt net als andere besturingssystemen bestanden en folders. In deze assignment maken we kennis met de filesystem van Linux.
  
 
-## Key-terms
+### Key-terms
 
 - [x] <strong>Directory</strong> refereert naar Folder of Map 
 - [x] <strong>File</strong> Bestand
@@ -11,18 +13,18 @@ Linux gebruikt net als andere besturingssystemen bestanden en folders. In deze a
 - [x] <strong>Relative Path</strong> Specificeert de locatie van een bestand of directory relatief ten opzichte van de huidige werkdirectory. Het begint niet met een schuine streep ("/") en neemt de huidige directory als uitgangspunt.
 
 
-## Benodigdheden
+### Benodigdheden
 
 - [x] <strong>Machine draaiend op Linux</strong> 
 
 
 
-## Opdrachtbeschrijving
+### Opdrachtbeschrijving
 
 Doel van deze opdracht is het leren omgaan met directories en bestanden in de CLI van Linux (Terminal)
 
 
-## Opdrachten
+### Opdrachten
 
 - [x] Ontdek je huidige folder op de CLI
 - [x] Geef een weergave van alle bestanden en folders in je 'home' directory.
@@ -54,15 +56,15 @@ Huidige folder:
 
 ![huidige-folder](../00_includes/LNX-02/show current directory.png)
 
-Home folder met lijstweergave van alle bestanden en folders:
+Home folder met lijstweergave van alle bestanden en folders dmv commando ```ls -a```
 
 ![lijst-weergave](../00_includes/LNX-02/LNX-02_listings-home.png)
 
-Techgrounds folder aangemaakt:
+Techgrounds folder aangemaakt in **/home** met ```mkdir techgrounds```
 
 ![techgrounds-direct](../00_includes/LNX-02/home-create-techgrounds-directory.png)
 
-Bestand met text aangemaakt:
+Bestand met text aangemaakt met ```cat > file.txt``` met de text: **write some message**
 
 ![techgrounds-direct](../00_includes/LNX-02/create-file-with-text.png)
 
