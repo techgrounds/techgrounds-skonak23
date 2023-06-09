@@ -7,10 +7,10 @@ Linux gebruikt net als andere besturingssystemen bestanden en folders. In deze a
 
 ### Key-terms
 
-- [x] <strong>Directory</strong> refereert naar Folder of Map 
-- [x] <strong>File</strong> Bestand
-- [x] <strong>Absolute Path</strong> Specificeert de volledige en exacte locatie van een bestand of map, beginnend bij de hoofdmap ("/").
-- [x] <strong>Relative Path</strong> Specificeert de locatie van een bestand of directory relatief ten opzichte van de huidige werkdirectory. Het begint niet met een schuine streep ("/") en neemt de huidige directory als uitgangspunt.
+- [x] <strong>Directory</strong> -> refereert naar Folder of Map 
+- [x] <strong>File</strong> -> Bestand
+- [x] <strong>Absolute Path</strong> -> Specificeert de volledige en exacte locatie van een bestand of map, beginnend bij de hoofdmap ("/").
+- [x] <strong>Relative Path</strong> -> Specificeert de locatie van een bestand of directory relatief ten opzichte van de huidige werkdirectory. Het begint niet met een schuine streep ("/") en neemt de huidige directory als uitgangspunt.
 
 
 ### Benodigdheden
@@ -44,13 +44,13 @@ Doel van deze opdracht is het leren omgaan met directories en bestanden in de CL
 ### Ervaren problemen
 
 Problemen ervaren met permissies voor het aanmaken of wijzigen van bestanden.
-<strong>Oplossing:</strong> d.m.v. **sudo chown** commando de juiste rechten ingesteld.
+<strong>Oplossing:</strong> d.m.v. ```sudo chown``` commando de juiste rechten ingesteld.
 
 ![Change-permissies](../00_includes/LNX-02/ownership-permissies.png)
 
 
 ### Resultaat
-Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+*Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving*
 
 Huidige folder:
 
