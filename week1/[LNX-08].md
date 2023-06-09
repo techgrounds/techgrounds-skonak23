@@ -33,6 +33,7 @@ In deze opdracht leren we hoe we in het cron-systeem in Linux taken kunnen toevo
 | https://wiki.lib.sun.ac.za/images/c/ca/TLCL-13.07.pdf  | Volledige documentatie van de linux commandline |
 | https://docs.linuxgsm.com/configuration/cronjobs | Info over het cron-systeem en het toevoegen van cronjobs |
 | https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/ | Een gids over Bash Scripting in Linux  |
+| https://crontab.guru/  | Handige tool om tijdsinterval van een cron job in te stellen |
 
 
 ### Ervaren problemen

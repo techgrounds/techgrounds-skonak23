@@ -54,7 +54,7 @@ Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende be
 
 Huidige folder:
 
-![huidige-folder](../00_includes/LNX-02/show current directory.png)
+![huidige-folder](../00_includes/LNX-02/show-current-directory.png)
 
 Home folder met lijstweergave van alle bestanden en folders dmv commando ```ls -a```
 
