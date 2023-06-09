@@ -1,5 +1,7 @@
 # [LNX-08]
 
+## Cron Jobs
+
 In dit onderdeel maken we kennis met 'Cron jobs'. Een "cron job" in Linux is een geautomatiseerde taakplanning die in bepaalde tijdsintervallen wordt uitgevoerd. Dit stelt gebruikers in staat om routinetaken te automatiseren, zoals bijvoorbeeld het genereren van rapporten in een logbestand.
  
 
@@ -14,14 +16,14 @@ In dit onderdeel maken we kennis met 'Cron jobs'. Een "cron job" in Linux is een
 
 ## Opdrachtbeschrijving
 
-In deze opdracht leren we hoe we in het cron-systeem in Linux taken kunnen voegen die automatisch binnen een bepaald tijdsinterval uitgevoerd worden. 
+In deze opdracht leren we hoe we in het cron-systeem in Linux taken kunnen toevoegen die automatisch binnen een bepaald tijdsinterval uitgevoerd worden. 
 
 
 ## Opdrachten
 
 - [x] Maak een Bash-script dat de huidige datum en tijd naar een bestand in je ```\home\``` directory schrijft.
 - [x] Registreer het script in je crontab zodat het elke minuut draait.
-- [x] Maak een script dat de beschikbare schijfruimte doorgeeft naar een logbestand in ```/var/logs````. Gebruik een cronjob zodat deze wekelijks wordt uitgevoerd. 
+- [x] Maak een script dat de beschikbare schijfruimte doorgeeft naar een logbestand in ```/var/logs```. Gebruik een cronjob zodat deze wekelijks wordt uitgevoerd. 
 
 
 ### Gebruikte bronnen
@@ -43,7 +45,7 @@ Opgelost mbv ```sudo chown sinan_:sinan_ date_time.txt```.
 
 
 ### Resultaat
-Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+*Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving*
 
 Bash script dat de huidige datum en tijd schrijft naar het bestand ```date_time.txt``` in de home folder
 

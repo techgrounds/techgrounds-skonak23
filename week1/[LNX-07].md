@@ -101,6 +101,7 @@ Weergave van de status van de Apache HTTP server na uitvoering van de script.
 
 Bash script die voldoet aan de voorwaarden gevraagd in Opdracht 2
 
+
 ![LNX-07-ex2-a](../00_includes/LNX-07/LNX-07-ex5a.png)
 
 Controle of het succesvol werkt: 
@@ -109,7 +110,8 @@ Controle of het succesvol werkt:
 
 ----------------------------------------------------------------------------------
 
-Bash script die voldoet aan de voorwaarden gevraagd in Opdracht 3:
+Bash script die voldoet aan de voorwaarden gevraagd in Opdracht 3
+De gevraagde conditions zijn ingevoerd. Als het willekeurige getal groter is dan '5' print dan uit. Anders print ```getal is kleiner dan 5```
 
 ![LNX-07-ex3a](../00_includes/LNX-07/LNX-07-ex6a.png)
 
