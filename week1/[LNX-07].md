@@ -78,10 +78,15 @@ Ter controle na uitvoering ```cat text1.txt``` -> succesvol resultaat.
 ![LNX-07-ex1-4](../00_includes/LNX-07/LNX-07-ex3b.png)
 
 Bash script met de instructies voor het installeren, activeren en aanzetten van httpd (apache).
+
 ```sudo apt update``` -> *om pakketinformatie van alle geconfigureerde bronnen te downloaden*
+
 ```sudo apt install -y apache2``` -> *het installeren van daemon httpd server*
+
 ```sudo systemctl start apache2``` -> *opstarten van de daemon (httpd) apache2*
+
 ```sudo systemctl enable apache2``` -> *activeren van apache2*
+
 ```sudo systemctl status apache2``` -> *status weergeven van apache2 httpd*
 
 ![LNX-07-ex1-5](../00_includes/LNX-07/LNX-07-ex4.png)
