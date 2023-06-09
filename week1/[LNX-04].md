@@ -1,5 +1,7 @@
 # [LNX-04]
 
+## Gebruikers en Groepen
+
 Op linux kun je net als bij Windows meerdere gebruikersaccounts hebben. Elke gebruiker heeft zijn eigen thuismap, en kunnen deel uitmaken van groepen.
 Sommige acties vereisen root privileges. Daarvoor is er een speciale gebruiker genaamd ‘root’. Die heeft alle rechten.
 Om tijdelijke rootrechten te krijgen, kun je 'sudo' voor een commando typen, maar dat werkt alleen als je dat mag doen.
@@ -15,7 +17,7 @@ Gebruikers, wachtwoorden en groepen worden allemaal opgeslagen in verschillende 
 
 ## Benodigdheden
 
-- [x] <strong>Machine draaiend op Linux</strong> 
+- [x] Machine draaiend op Linux 
 
 
 ## Opdrachtbeschrijving
@@ -44,13 +46,15 @@ Geen.
 
 
 ### Resultaat
-Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving
+*Hieronder ziet u de afbeeldingen die het resultaat weergeeft met bijbehorende beschrijving*
 
-Het aanmaken van een nieuwe user met wachtwoord en rootprivileges (su).
+Het aanmaken van een nieuwe user met wachtwoord en rootprivileges (su): ```sudo adduser konak```
 
 ![LNX-04-ex1](../00_includes/LNX-04/LNX-04-ex1.png)
 
-Weergave van de locatie waar bestanden zijn opgeslagen met daarin gegevens zoals gebruikers, wachtwoorden en groepen.
+Weergave van de locatie waar bestanden zijn opgeslagen met daarin gegevens zoals gebruikers, wachtwoorden en groepen: ```grep "konak" /etc/group```
 
 ![LNX-04-ex2](../00_includes/LNX-04/LNX-04-ex2.png)
+
+
 

@@ -65,7 +65,7 @@ Vervolgens wordt de inhoud van het bestand weergegeven met ```cat file.txt```
 
 
 
-Weergave van de inhoud van een textbestand met "techgrounds" uitgelicht door toepassen van **grep** -> ```grep "techgrounds" file.txt"
+Weergave van de inhoud van een textbestand met "techgrounds" uitgelicht door toepassen van **grep** -> ```grep "techgrounds" file.txt"```
 
 ![LNX-03-ex2](../00_includes/LNX-03/LNX-03-ex2.png)
 

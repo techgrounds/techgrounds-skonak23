@@ -5,11 +5,11 @@ In dit onderdeel maken we kennis met 'Cron jobs'. Een "cron job" in Linux is een
 
 ## Key-terms
 
-- [x] <strong>Cron Job</strong> Een taak die periodiek kan worden aangeroepen.
+- [x] <strong>Cron Job</strong> -> Een taak die periodiek kan worden aangeroepen.
 
 ## Benodigdheden
 
-- [x] <strong>Machine draaiend op Linux</strong> 
+- [x] Machine draaiend op Linux 
 
 
 ## Opdrachtbeschrijving
