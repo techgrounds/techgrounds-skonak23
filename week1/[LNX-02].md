@@ -15,7 +15,7 @@ Linux gebruikt net als andere besturingssystemen bestanden en folders. In deze a
 
 ### Benodigdheden
 
-- [x] <strong>Machine draaiend op Linux</strong> 
+- [x] Machine draaiend op Linux
 
 
 
@@ -68,8 +68,10 @@ Bestand met text aangemaakt met ```cat > file.txt``` met de text: **write some m
 
 ![techgrounds-direct](../00_includes/LNX-02/create-file-with-text.png)
 
-Relative en Absolute weergave:
-
+Relative en Absolute weergave.
+Bovenste command is een absolute weergave -> ```cat /home/techgrounds/file.txt```
+Er onder is de huidige path al gewijzigd naar directory waar het bestand zich bevind.
+Dus is ```cat file.txt``` voldoende. -> relatieve weergave
 ![techgrounds-direct](../00_includes/LNX-02/Weergave-absolute-relative-path.png)
 
 
