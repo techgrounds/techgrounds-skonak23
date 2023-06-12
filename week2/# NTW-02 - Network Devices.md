@@ -45,9 +45,9 @@ None.
 
 See **Key-terms** for description and functions of common network equipment.
 
-Overview of the homepage of my home network router where we can see the connected devices which are present in the second column. The blue circle refers to this laptop. ```laptop ip adress = 192.168.2.15```
+Overview of the homepage of my home network router where we can see the connected devices which are present in the second column. ```laptop ip adress = 192.168.2.15```
 
-![NTW-02-Router-home](../00_includes/NTW-01/osi-vs-tcpip.png)
+![NTW-02-Router-home](../00_includes/NTW-02/NTW-02-Modem-home.png)
 
 Other information the router has about connected equipment -> *Host Name* 
 
