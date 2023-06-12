@@ -32,7 +32,7 @@ The TCP/IP model is a model widely used on the internet. It is based on a set of
 - [x] 6 -> **Presentation Layer**: This layer handles the formatting, encryption, and compression of data that is transfered on the network. It ensures that data is presented in a format that the application layer can understand.
 - [x] 7 -> **Application Layer**: The application layer provides services directly to the end-users. It enables network applications to access the network so that you can use it for services such as email, file transfer, and remote login.
 
-![NTW-01-OSI-model](../00_includes/XXXXXX.png)
+![NTW-01-OSI-model](../00_includes/NTW-01/osi-model-layers.png)
 
 
 
@@ -42,3 +42,8 @@ The TCP/IP model is a model widely used on the internet. It is based on a set of
 - [x] 2 -> **Internet Layer**: The internet layer is equivalent to the network layer in the OSI model. It handles the addressing and  routing of data packets over an IP network.
 - [x] 3 -> **Transport Layer**: The transport layer is similar to the transport layer in the OSI model. It provides reliable data transfer between systems using protocols like TCP.
 - [x] 4 -> **Application Layer**: The application layer in the TCP/IP model combines the functionalities of the session, presentation, and application layers in the OSI model. It encompasses all the protocols and services needed for specific applications to communicate over the network, such as HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), and DNS (Domain Name System).
+
+**TCP/IP--vs--OSI** :
+
+![NTW-01-OSI-model](../00_includes/NTW-01/osi-vs-tcpip.png)
+

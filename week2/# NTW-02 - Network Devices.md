@@ -1,6 +1,6 @@
 # NTW-02 - Network Devices
 
-In computer networks, various devices work together to enable communication and the exchange of information. These network devices play different roles and have specific functions to ensure the smooth operation of networks. In this assignment we will take a deeper dive into common network devices and how they correspond to the OSI-model. To conclude, we will take a look in my own network environment and access my router to discover and gather network data.
+In computer networks, various devices work together to enable communication and the exchange of information. These network devices play different roles and have specific functions to ensure the smooth operation of networks. In this assignment we will take a deeper dive into common network devices and how they correspond to the OSI-model. To conclude, we will take a look in my own network environment and access my router to discover and gather certain network data required for this assignment.
 
 
 ## Key-terms (with regards to the OSI-model) 
@@ -28,7 +28,8 @@ In computer networks, various devices work together to enable communication and 
 
 ### Sources used
 
-| Bron      | Beschrijving |
+| Bron        | Beschrijving |
+| ----------- | ----------- |
 | https://www.pcmag.com/how-to/how-to-access-your-wi-fi-routers-settings | Information about accessing your home router |
 | https://blog.netwrix.com/2019/01/08/network-devices-explained/ | Comprehensive guide that explains network devices |
 
@@ -42,29 +43,14 @@ None.
 ### Result
 *Below you will find the images showing the results along with their descriptions*
 
+Overview of the homepage of my home network router where we can see the connected devices which are present in the second column. The blue circle refers to this laptop. ```laptop ip adress = 192.168.2.15```
+
+![NTW-02-Router-home](../00_includes/NTW-01/osi-vs-tcpip.png)
+
 XXXXXX
 
 !
 
-XXXXXX
-
-!
-
-XXXXX
-
-!
-
-XXXXXXX
-
-!
-
-XXXXXXX
-
-!
-
-XXXXXXX
-
-!
 
 
 
