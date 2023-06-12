@@ -21,7 +21,7 @@ In computer networks, various devices work together to enable communication and 
 
 ## Tasks
 
-- [x] Name and describe the functions of common network equipment
+- [x] Name and describe the functions of common network equipment.
 - [x] Most routers have an overview of all connected devices, find this list. What other information does the router have about connected equipment?
 - [x] Where is your DHCP server on your network? What are the configurations of these?
 
@@ -43,13 +43,26 @@ None.
 ### Result
 *Below you will find the images showing the results along with their descriptions*
 
+See **Key-terms** for description and functions of common network equipment.
+
 Overview of the homepage of my home network router where we can see the connected devices which are present in the second column. The blue circle refers to this laptop. ```laptop ip adress = 192.168.2.15```
 
 ![NTW-02-Router-home](../00_includes/NTW-01/osi-vs-tcpip.png)
 
-XXXXXX
+Other information the router has about connected equipment -> *Host Name* 
 
-!
+DHCP server can be found via either Command Prompt ```ipconfig /all```. Or by accessing the router DHCP settings.
+
+DHCP server : 192.168.2.254
+
+Command Prompt:
+
+![NTW-02-Router-home](../00_includes/NTW-02/Laptop-ip-adress.png)
+
+Router DHCP settings:
+
+![NTW-02-Router-home](../00_includes/NTW-02/DHCP-config-router.png)
+
 
 
 
