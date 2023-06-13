@@ -61,27 +61,20 @@ In order to introduce your own protocol, one must follow the processes for creat
 - Reviewing several iterations by the Internet community and experts.
 - Final revision based upon experience. If agreed upon by all parties -> The new protocol may be published. 
 
+**Wireshark**
 
-![NTW-02-Router-home](../00_includes/NTW-02/NTW-02-Modem-home.png)
+Below in the first capture, you see an overview of a timestamp with multiple network sources and destinations listed.
+```XIAOMI1``` refers to my router and the protocol it uses is **ARP** (see "Key-terms" for description)
+MAC-adress belonging to this device = ```"(28:6c:07:cf:73:25)"```
 
-Other information the router has about connected equipment -> *Host Name* 
-
-DHCP server can be found via either Command Prompt ```ipconfig /all```. Or by accessing the router DHCP settings.
-
-DHCP server : 192.168.2.254
-
-Command Prompt:
-
-![NTW-02-Router-home](../00_includes/NTW-02/Laptop-ip-adress.png)
-
-Router DHCP settings:
-
-![NTW-02-Router-home](../00_includes/NTW-02/DHCP-config-router.png)
+![Wireshark-Router-MAC](../00_includes/NTW-03/Wireshark-Router-MAC.png)
 
 
+In the second capture various protocols are listed: *UDP* - *TCP* - *TLS*
+My own laptop's physical address -> ```(50:2f:9b:fe:38:f5)```
+		private ip adress -> ```192.168.2.15```
 
-
-
+![Wireshark-various-protocols](../00_includes/NTW-03/Wireshark-various-protocols.png)
 
 
 
