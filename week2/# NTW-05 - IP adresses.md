@@ -62,7 +62,7 @@ Your can find your Public IP by simply googling *"what is my ip"* and it will pr
 
 - When performing this task on the laptop and phone, it gives the same result. This is because when these devices send data packets to the internet, the router replaces their private IP addresses with the single public IP address assigned to your router. Hence, every device at home corresponding with your router will share same public IP address.
 
-![Public-ip-google](../00_includes\NTW-05\.png)
+![Public-ip-google](../00_includes/NTW-05/Public-IP-google.png)
 
 The private IP address of my laptop and phone differ from each other. Laptop = ```192.168.2.15```   Phone = ```192.168.2.2```
 
