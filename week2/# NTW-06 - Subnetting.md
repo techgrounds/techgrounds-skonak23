@@ -52,7 +52,9 @@ Subnetting enables the creation of private and public subnets. A private subnet 
 | https://www.subnetting.net/Tutorial.aspx | Guide into Subnetting |
 | https://www.youtube.com/watch?v=s_Ntt6eTn94 | Subnet Mask - Explained |
 
+Below an overview of commonly used Subnet masks and their corresponding properties:
 
+![hosts-networks-subnetmask](../00_includes/NTW-06/hosts-networks-subnetmask.png)
 
 
 ### Problems experienced
