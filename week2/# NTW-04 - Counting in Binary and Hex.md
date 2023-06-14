@@ -38,6 +38,27 @@ None.
 
 ### Formulas used for translating between number-systems
 
+*Decimal to Binary -> Successive Division : Divide the given Decimal number by 2 in succesion and write down the "Remainder".*
+Example: Suppose we want to convert the decimal number **16** to binary:
+
+Divide 16 by 2: 16 ÷ 2 = 8 with a remainder of 0. Write down the remainder (0).
+Divide 8 by 2: 8 ÷ 2 = 4 with a remainder of 0. Write down the remainder (0).
+Divide 4 by 2: 4 ÷ 2 = 2 with a remainder of 0. Write down the remainder (0).
+Divide 2 by 2: 2 ÷ 2 = 1 with a remainder of 0. Write down the remainder (0).
+Divide 1 by 2: 1 ÷ 2 = 0 with a remainder of 1. Write down the remainder (1).
+Now, read the remainders in reverse order: 10000. This is the binary representation of the decimal number 16.
+
+*Binary to Decimal:*
+Example: Suppose we want to convert the binary number **11001010** into decimal number:
+
+Use formula : *Decimal Number = (bn * 2^n) + (bn-1 * 2^(n-1)) + ... + (b1 * 2^1) + (b0 * 2^0)*
+(bn= binary digit)  ('n') represents the position of the binary digit from right to left, starting from 0.)
+
+(11001010) = (1x128)+(1x64)+(0x32)+(0x16)+(1x8)+(0x4)+(1x2)+(0x1) = 128+64+0+0+8+0+2+0 = *202*
+
+
+
+
 
 
 ### Result(s)
