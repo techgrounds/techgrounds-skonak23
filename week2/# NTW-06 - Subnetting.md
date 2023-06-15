@@ -75,7 +75,7 @@ So:	(Subnet A)
 	Network ID = 	192.168.1.0
 	Broadcast ID =	192.168.1.31
 	Total hosts =  	32  (usable: 30)	
-	Subnet Mast =	255.255.255.224 /27
+	Subnet Mask =	255.255.255.224 /27
 	
 ```
 
@@ -100,18 +100,22 @@ So:	(Subnet B)
 
 **Question**: *Create a network architecture including the following condition* -> 1 public subnet with an internet gateway. This subnet must be able to place at least 5 hosts (the 5 hosts does not include the internet gateway).
 
-Solution -> Lets start with the numbers first: At least 5 Hosts, excluding the internet gateway. So in this case we can use Subnet mask ```255.255.255.248``` which leaves room for a total of 6 usable Hosts. CIDR notation '/29' corresponds to this Host amount. 
+Solution -> Lets start with the numbers first: At least 5 Hosts, excluding the internet gateway. This leaves room for a total of 6 usable Hosts. CIDR notation '/29' corresponds to this Host amount.
+
+Since this a public subnet, the ip-address of this network can not be the same as is with a private ip address like ```192.168.1.1``` So for this excercise we will use ```169.255.0.0``` 
 
 So:	(Subnet C)
 ```
-	Network ID = 	192.168.1.64
-	Broadcast ID =	192.168.1.71
+	Network ID = 	169.255.0.0
+	Broadcast ID =	169.255.0.7
 	Total hosts =  	8  (usable: 6)	
-	Subnet Mast =	255.255.255.248 /27
+	CIDR =		/29
 	Internet Gateway
 ```
 
+### Subnet(s) Architechture diagram 
 
+![draw-io](../00_includes/NTW-06/Diagram-network-architechture.png)
 
 
 
