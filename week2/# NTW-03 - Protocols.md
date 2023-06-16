@@ -11,7 +11,10 @@ Protocols are like sets of rules that computers and devices use to communicate a
 - [x] <strong>ARP</strong> (Address Resolution Protocol) -> Layer 2 (Data link Layer), protocol that helps devices in a local network find each other. In this process the protocol translates the IP address to a fixed physical machine address, Media Access Control (MAC) address.
 - [x] <strong>Ethernet</strong> -> Layer 1 (Physical Layer), protocol used to physically connect devices together in a local area network (LAN).
 - [x] <strong>NetBIOS</strong> (Network Basic Input/Output System) -> Layer 5 (Session Layer), an older protocol that helps devices in a LAN communicate with each other. Additionally it assigns (host) names to devices in a network. Routers aren't able to use this, hence it is seldomly used nowadays.
-- [x] <strong>TLS</strong> (Transport Layer Security) -> Layer 6 (Presentation Layer), is a cryptographic protocol that provides data integrity and security by encrypting data that is communicated over the internet.   
+- [x] <strong>TLS</strong> (Transport Layer Security) -> Layer 6 (Presentation Layer), is a cryptographic protocol that provides data integrity and security by encrypting data that is communicated over the internet.
+- [x] <strong>Firewall</strong> (OSI layer 3 and 4) ->, a network security system that monitors and filters incoming and outgoing network traffic based on the perimeters that it's configured with. 
+- [x] <strong>DHCP</strong> ((Application Layer (effectively)) -> Layer 7,  a network management protocol used to dynamically assign an IP address to any device, or node, on a network so it can communicate using IP.
+     
 
 
 ## Requirements

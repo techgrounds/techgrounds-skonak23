@@ -113,7 +113,7 @@ So:	(Subnet C)
 	Internet Gateway
 ```
 
-### Subnet(s) Architechture diagram 
+### Subnet(s) Architecture diagram 
 
 ![draw-io](../00_includes/NTW-06/Diagram-network-architechture.png)
 
