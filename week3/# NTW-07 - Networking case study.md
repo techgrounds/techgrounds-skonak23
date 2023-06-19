@@ -8,8 +8,8 @@ In this Assigment we will make a case study where we take the role of a network 
 
 ## Key-terms
 
-- [x] <strong>Firewall</strong> ->  
-- [x] <strong>DMZ</strong> (Demilitarized zone_ ->  
+- [x] <strong>Firewall</strong> -> A network security system that monitors and filters incoming and outgoing network traffic based on the perimeters that it's configured with.
+- [x] <strong>DMZ</strong> (Demilitarized zone) -> A perimeter network that protects and adds an extra layer of security to an organization's internal local-area network from untrusted traffic.
 - [x] <strong>AD</strong> -> A device (e.g. Router) that let's devices from one network, communicate with devices on another network. (In this context, "Default" means that the designated device is the first option that's looked upon when data needs to exit the network.)
 - [x] <strong>Database</strong> (Classless Inter-Domain Routing) ->
 - [x] <strong>Web server</strong> -> the last Octet of an IP-address e.g. 192.168.1.**128**
@@ -35,7 +35,7 @@ The office must contain the following devices:
 - An AD server
 - A file server containing internal documents
 
-Design must have additional focus o network security.
+Design must have additional focus on network security.
 
 - [x] Explain your design decisions
 
