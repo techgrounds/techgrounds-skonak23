@@ -19,6 +19,7 @@ It's an important tool to secure our digital communications, protect personal in
 - [x] <strong>Cryptography</strong> -> Refers to the science of encrypting and decrypting. It explains the method of protecting information and communication through the use of (secret) codes, so that only those for whom the information is intended can read and process it
 - [x] <strong>Ciphertext</strong> -> encrypted text transformed from plaintext using an encryption algorithm
 - [x] <strong>Plaintext</strong> -> ordinary readable text before it is encrypted into ciphertext, or readable text after it is decrypted.
+- [x] **ECB** -> a simple mode of operation with a block cipher that's mostly used with symmetric key encryption
 
 ### Strengths / Weaknesses
 
@@ -56,7 +57,8 @@ Symmetric encryption :
 | Bron        | Beschrijving |
 | ----------- | ----------- |
 | https://www.techtarget.com/searchsecurity/definition/cipher | Concept of ciphers explained |
-| https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher | Article about a Historic cipher called Vigenère cipher |
+| https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher | Article about a Historic cipher called Vigenère cipher | 
+| https://www.javainuse.com/aesgenerator | Online AES Encryption and Decryption Tool |
 
 
 
@@ -80,5 +82,20 @@ None.
 
 2. Rivest-Shamir-Adleman (RSA) -> an asymmetric encryption algorithm. It is an old one that is used widely for secure data transmission.
 
-![ifconfig-linux](../00_includes/SEC-04/ifconfig-linuxx.png)
+With symmetric encryption it is required for the other party to receive the secret key that is needed to decrypt a designated encrypted message. This should be considered as a significant shortcoming of symmetric encryption because you are sharing a confidential key over the public internet, which means it is prone to being intercepted.   
+
+For this purpose I used a online tool for creating an encrypted message along with the secret key to decrypt the message. 
+
+```
+PLain text = net.sec.testbericht
+keysize = 128 bit
+Mode = ECB
+Secret Key = 1231231231231231   (16 bits)
+
+Decryption : 
+
+![AES-decryption](../00_includes/SEC-04/decrypting-aes-scrambled.png)
+
+
+
 
