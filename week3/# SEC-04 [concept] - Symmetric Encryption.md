@@ -1,4 +1,4 @@
-# SEC-04 - Symmetric Encryption
+# SEC-04 (concept) - Symmetric Encryption
 
 In this Assigment we will take a deeper dive into the concept of (symmetric) encryption.
 
@@ -12,9 +12,23 @@ It's an important tool to secure our digital communications, protect personal in
 ## Key-terms
 
 - [x] <strong>Encryption</strong> -> a method by which information is converted into secret code that hides the information's true meaning. In IT, it is a way to scramble data so that only authorized parties can unscramble it.
+- [x] <strong>Decryption</strong> -> The conversion of encrypted data into its original form.
 - [x] <strong>Ciphers</strong> -> methods or algorithms used to convert information into a secret or encrypted form.
 - [x] <strong>Symmetric (key) Encryption</strong> -> method of encryption where the same secret key is used for both encrypting and decrypting data, like a shared secret code between sender and receiver.
+- [x] <strong>Simple Encryption</strong> -> Transforms Plaintext into Cipher text.
 - [x] <strong>Cryptography</strong> -> Refers to the science of encrypting and decrypting. It explains the method of protecting information and communication through the use of (secret) codes, so that only those for whom the information is intended can read and process it
+- [x] <strong>Ciphertext</strong> -> encrypted text transformed from plaintext using an encryption algorithm
+- [x] <strong>Plaintext</strong> -> ordinary readable text before it is encrypted into ciphertext, or readable text after it is decrypted.
+
+### Strengths / Weaknesses
+
+Symmetric encryption :  
+
+        +     efficient and fast for encrypting large amounts of data.
+
+		-     requires sharing the secret key between the sender and receiver beforehand, thus less secure.
+		-     key management becomes more complex as the number of participants increases.
+
 
 
 
@@ -58,7 +72,13 @@ None.
 
 *Below you will find the images showing the results along with their descriptions*
 
-**Vigenère cipher**
+**Vigenère cipher** -> encryption method named after *Blaise de Vigenère*. It uses a keyword or phrase as a key to encrypt and decrypt messages and works by shifting the letters of the message based on the corresponding letters of the keyword.
+
+- Two digital ciphers that are being used today:
+
+1. Advanced Encryption Standard (AES) -> A symmetric encryption algorithm that is adopted as the standard encryption method by worldwide industries, governments and organizations. It supports key sizes of 128, 192, and 256 bits and is known for its security, efficiency, and flexibility.
+
+2. Rivest-Shamir-Adleman (RSA) -> an asymmetric encryption algorithm. It is an old one that is used widely for secure data transmission.
 
 ![ifconfig-linux](../00_includes/SEC-04/ifconfig-linuxx.png)
 
