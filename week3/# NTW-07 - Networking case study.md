@@ -10,9 +10,9 @@ In this Assigment we will make a case study where we take the role of a network 
 
 - [x] <strong>Firewall</strong> -> A network security system that monitors and filters incoming and outgoing network traffic based on the perimeters that it's configured with.
 - [x] <strong>DMZ</strong> (Demilitarized zone) -> A perimeter network that protects and adds an extra layer of security to an organization's internal local-area network from untrusted traffic.
-- [x] <strong>AD</strong> -> A device (e.g. Router) that let's devices from one network, communicate with devices on another network. (In this context, "Default" means that the designated device is the first option that's looked upon when data needs to exit the network.)
-- [x] <strong>Database</strong> (Classless Inter-Domain Routing) ->
-- [x] <strong>Web server</strong> -> the last Octet of an IP-address e.g. 192.168.1.**128**
+- [x] <strong>AD</strong> (Active Directory) -> is a service comprising a database and executable code. It is responsible for managing requests and maintaining the database
+- [x] <strong>Database</strong> -> a structured set of data held in a computer, especially one that is accessible in various ways.
+- [x] <strong>Web server</strong> -> A computer system capable of delivering web content to end users over the internet via a web browser
 
 
 
@@ -63,7 +63,7 @@ None.
 
 ### Network Architecture Design 
 
-![draw-io](../00_includes/NTW-06/Diagram-network-.png)
+![draw-io](../00_includes/NTW-07/diagram-v1.png)
 
 
 

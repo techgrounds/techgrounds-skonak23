@@ -2,6 +2,9 @@
 
 In this Assigment we will take a deeper dive into the concept of detecting and analyzing a network with the aid of tools like 'Network Mapper' and Wireshark.
 
+In order to prevent or stop attacks on a network, you must be able to analyse your network. 
+Analyzing network data using tools like Nmap and Wireshark provides valuable insights into the functioning and security of a network. 
+
 
 
 
@@ -33,8 +36,8 @@ In this Assigment we will take a deeper dive into the concept of detecting and a
 
 | Bron        | Beschrijving |
 | ----------- | ----------- |
-| https://medium.com/@nakah_/recommended-design-for-a-secure-network-architecture-15612e17ece4 | Article on secure network design|
-| xxxxxxxxxx | xxxxxxxxxxx |
+| https://www.freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/ | Article on setting up and using nmap|
+| https://www.varonis.com/blog/how-to-use-wireshark | Wireshark comprehensive article |
 
 
 
