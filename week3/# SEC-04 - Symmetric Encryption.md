@@ -1,4 +1,4 @@
-# SEC-04 (concept) - Symmetric Encryption
+# SEC-04 - Symmetric Encryption
 
 In this Assigment we will take a deeper dive into the concept of (symmetric) encryption.
 
@@ -84,18 +84,23 @@ None.
 
 With symmetric encryption it is required for the other party to receive the secret key that is needed to decrypt a designated encrypted message. This should be considered as a significant shortcoming of symmetric encryption because you are sharing a confidential key over the public internet, which means it is prone to being intercepted.   
 
-For this purpose I used a online tool for creating an encrypted message along with the secret key to decrypt the message. 
+For this purpose I used a online AES tool for creating an encrypted message along with the secret key to decrypt the message. 
 
 ```
 PLain text = net.sec.testbericht
 keysize = 128 bit
 Mode = ECB
 Secret Key = 1231231231231231   (16 bits)
+encrypted message: Jp7dhwFCxEjTaBksM7xZYcLTN5Bj3Rkb6DXY9/20Jes=
+
 ```
 
-Decryption : 
+It is recommended to avoid the symmetric encryption method for transferring encrypted messages and instead use asymmetric encryption. That way the communication stays unexposed, thus more secure.
 
-![AES-decryption](../00_includes/SEC-04/decrypting-aes-scrambled.png)
+Below you see a capture of the encrypting and decrypting process by using the public key of my peer to generate a message which he can then decrypt using his private key and vice versa.
+
+![asymmetric-exchange](../00_includes/SEC-04/zev-sinan-asymmetric.png)
+
 
 
 

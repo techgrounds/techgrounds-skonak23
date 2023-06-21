@@ -56,6 +56,7 @@ Asymmetric encryption :
 | https://learn.microsoft.com/en-us/dotnet/standard/security/cryptographic-signatures | Cryptographic Signatures |
 | https://www.youtube.com/watch?v=o_g-M7UBqI8 | Differences between asymmetric / symmetric illustrated |
 | https://8gwifi.org/rsafunctions.jsp | Online Tool for RSA decryption |
+| https://www.devglan.com/online-tools/rsa-encryption-decryption | RSA encrypt/decrypt tool |
 
 
 
