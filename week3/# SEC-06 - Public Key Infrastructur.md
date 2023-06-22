@@ -86,9 +86,13 @@ req 	-> specifies that I want to use the X.509 standard for creating a certifica
 
 ![certificate-rsa-generate](../00_includes/SEC-06/generating-rsa-privatekey.png)
 
-To view the contents of the certificate :
+To view the contents of the certificate scrambled :
 
 ![certificate-crt-rsa](../00_includes/SEC-06/certificate-crt-rsa.png)
+
+Certificate Detailed (text):
+![certificate-sinan](../00_includes/SEC-06/certificate-sinan.png)
+
 
 Contents of private *.key* file
   
