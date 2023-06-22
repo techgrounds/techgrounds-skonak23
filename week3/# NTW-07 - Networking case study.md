@@ -69,14 +69,14 @@ I decided that for a small company most elements should be located in the office
 
 - The workstations and printer are placed in a private subnet connected to a switch that have internet access through the Router. 
 
-- The webserver is inside a DMZ, it is the only device that is not part of the LAN, and is isolated from the internal network by an external firewall which acts as a security gateway. 
+- The webserver is inside a DMZ. Adding a DMZ to the design makes sure that network traffic coming from outside the internal network is compromised from accessing the internal network of the company.
 
-Adding a DMZ to the design makes sure that network traffic coming from outside the internal network is compromised from accessing the internal network of the company.
+
 
 
 ### Network Architecture Design 
 
-![draw-io](../00_includes/NTW-07/diagram-v1.png)
+![draw-io](../00_includes/NTW-07/diagram-v2.png)
 
 
 
