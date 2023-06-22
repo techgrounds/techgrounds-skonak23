@@ -46,7 +46,7 @@ Design must have additional focus on network security.
 | Bron        | Beschrijving |
 | ----------- | ----------- |
 | https://medium.com/@nakah_/recommended-design-for-a-secure-network-architecture-15612e17ece4 | Article on secure network design|
-| xxxxxxxxxx | xxxxxxxxxxx |
+| https://www.fortinet.com/resources/cyberglossary/what-is-dmz | Article on DMZ networks |
 
 
 
@@ -57,8 +57,21 @@ Design must have additional focus on network security.
 None.
 
 
-### Result(s)
+### Design Decisions Explained
 
+For this case study I made a network architecture design for a small e-commerce company.
+
+Explanation for my design decisions:
+
+I decided that for a small company most elements should be located in the office for a more robust and secure network environment. More so because the company states that security is very important to them. 
+
+- The database, AD-server and File-server are placed in a private subnet within the local area network (LAN) protected with a internal Firewall configuration set on the Router.
+
+- The workstations and printer are placed in a private subnet connected to a switch that have internet access through the Router. 
+
+- The webserver is inside a DMZ, it is the only device that is not part of the LAN, and is isolated from the internal network by an external firewall which acts as a security gateway. 
+
+Adding a DMZ to the design makes sure that network traffic coming from outside the internal network is compromised from accessing the internal network of the company.
 
 
 ### Network Architecture Design 
