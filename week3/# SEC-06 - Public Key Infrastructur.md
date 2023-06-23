@@ -90,7 +90,7 @@ To view the contents of the certificate scrambled :
 
 ![certificate-crt-rsa](../00_includes/SEC-06/certificate-crt-rsa.png)
 
-Certificate Detailed (text):
+Certificate X.509 format detailed (text):
 ![certificate-sinan](../00_includes/SEC-06/certificate-sinan.png)
 
 

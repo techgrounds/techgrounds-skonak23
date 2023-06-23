@@ -52,7 +52,7 @@ None.
 
 *Below you will find the images showing the results along with their descriptions*
 
-The anlayse the network on the remote linux machine, we first have discover the current network configuration that is set on the machine. To do that we can use the command ```ifconfig``` in linux bash:
+The analyse the network on the remote linux machine, we first have to discover the current network configuration that is set on the machine. To do that we can use the command ```ifconfig``` in linux bash:
 
 ![ifconfig-linux](../00_includes/SEC-01/ifconfig-linux.png)
 

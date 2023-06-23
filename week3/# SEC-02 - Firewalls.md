@@ -14,9 +14,10 @@ In Linux, firewalls are commonly implemented using software like iptables or fir
 - [x] <strong>Firewall</strong> -> A network security system that monitors and filters incoming and outgoing network traffic based on the perimeters that it's configured with.
 - [x] <strong>Stateless Firewall</strong> -> examine individual packets in isolation and make decisions based on simple rules. They lack the ability to track the state of network connections.
 - [x] <strong>Stateful Firewall</strong> -> maintain awareness of the state of network connections. They analyze packet information, including the connection's context, and make decisions based on the connection's current state.
-- [x] <strong>zone-based firewall</strong>is a network security system that monitor traffic and take actions based on a set of defined rules applied against incoming/outgoing packets.
+- [x] <strong>zone-based firewall</strong> -> a network security system that monitor traffic and take actions based on a set of defined rules applied against incoming/outgoing packets.
 - [x] <strong>firewalld</strong> (Firewall Daemon)-> A network security system that monitors and filters incoming and outgoing network traffic based on the perimeters that it's configured with.
-- [x] <strong>iptables</strong> a legacy firewall program for Linux that monitors traffic from and to your server using tables that contain sets of rules.
+- [x] <strong>iptables</strong> -> a legacy firewall program for Linux that monitors traffic from and to your server using tables that contain sets of rules.
+- [x] <strong>ufw</strong> (uncomplicated firewall) -> a firewall configuration tool that runs on top of iptables, included by default within Ubuntu distributions.
 
 
 
