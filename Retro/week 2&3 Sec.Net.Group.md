@@ -1,4 +1,4 @@
-# Retro van groep 1 van week 1
+# Retro van groep 2 van week (2 en 3)
 
 ## Wat ging goed?
 **Sinan:**
