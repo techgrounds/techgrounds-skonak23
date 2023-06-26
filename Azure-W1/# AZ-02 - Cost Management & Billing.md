@@ -117,6 +117,7 @@ So technically speaking, you could save more than $80.000 in costs in 5 years by
 ### Sources used
 
 | Source       | Description |
+| ----------- | ----------- |
 | https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview | MS Learn - Microsoft Cost Management and Billing |
 | https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-best-practices | MS learn - Cost Management Optimization |
 | https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/ | Azure free account Terms |
