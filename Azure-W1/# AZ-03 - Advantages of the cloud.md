@@ -59,6 +59,9 @@ This model offers a flexible and cost-effective approach to utilizing cloud reso
 
 Pay-as-you-go: You're billed only for what you use.
 
+![AZ-03-Model](../00_includes/AZ-03/Azure-Migration.png)
+
+
 ### Sources used
 
 | Source        | Description |
