@@ -53,6 +53,7 @@ Hashes stay a fixed length, in the example above (MD5) 128 bit, so 32 characters
 | https://en.wikipedia.org/wiki/Rainbow_table | Article about Rainbow Tables |
 | https://www.authgear.com/post/password-hashing-salting | Hashing and Salting explained |
 | https://canonical.com/blog/fips-certification-ubuntu-20-04-lts | FIPS-140-2 Ubuntu certification | 
+| https://linuxize.com/post/etc-shadow-file/ | Article on linux pw's |
 
 
 
