@@ -6,7 +6,7 @@ Azure Disk Storage is a powerful and flexible storage solution provided by Micro
 ## Key-terms
 
 - [x] <strong>Managed disks</strong> -> service provided by Azure for the management and scaling of disk stora
-- [x] <strong>Unmanaged disks</strong> -> 
+- [x] <strong>Unmanaged disks</strong> ->  require manual management and are stored in Azure Storage Accounts. Unmanaged disks offer more control over the underlying storage configurations but lack some of the automated management features provided by managed disks.
 - [x] <strong>SSD</strong> -> Solid State Disk, faster access times, ideal for workloads that require high performance
 - [x] <strong>HDD</strong> -> Older hard disk technology, lower cost, for workloads that prioritize capacity over speed
 - [x] <strong>IOPS</strong> -> input/output operations per second
