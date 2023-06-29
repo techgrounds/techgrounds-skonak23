@@ -76,13 +76,3 @@ To conclude I mounted the newly created shared disk and checked again on both of
 
 ![final](../00_includes/AZ-07/final.png)
 
-
-
-
-
-
-
-
-
-
-https://linuxhint.com/list_disks_ubuntu/
