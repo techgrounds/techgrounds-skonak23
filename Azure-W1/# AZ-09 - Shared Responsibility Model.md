@@ -26,7 +26,7 @@ of those services and your data on the cloud.
 - Azure also allows hybrid scenarios, enabling organizations to integrate their on-premises infrastructure with Azure services.
 
 
-![AZ-00-Model](../00_includes/AZ-09/model-example.png)
+![AZ-00-Model](../00_includes/AZ-09/shared-responsibility-model.png)
 
 
 ### Sources used
