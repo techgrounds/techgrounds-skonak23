@@ -10,6 +10,7 @@ To implement Auto Scaling, you can use VM Scale Sets, which allow you to manage 
 
 By combining Azure Load Balancer and Auto Scaling, you can create a robust infrastructure that provides high availability and elasticity. When traffic increases, new instances can be automatically added to the pool, and Azure Load Balancer ensures that the traffic is distributed evenly across these instances.
 
+**Stress testing**: Stress testing is done to determine the upper limit of tolerance for applications.
 
 ## Requirements
 
@@ -104,7 +105,7 @@ After some time monitoring my instances, I noticed it eventually decided to add 
 
 ![auto-scale](../00_includes/AZ-11/auto-scale.png)
 
-To confirm what I saw, I checked the all-resources tab. 3 instances were present now. 
+To confirm what I saw, I checked the all-resources tab. 4 instances were present now. 
 
 ![auto-scxzzale](../00_includes/AZ-11/3-instance.png)
 
