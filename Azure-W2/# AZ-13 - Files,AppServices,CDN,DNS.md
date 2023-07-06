@@ -8,8 +8,7 @@ Azure provides a wide range of apps and services that empower organizations to b
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It's a fully managed platform as a service (PaaS) offering for developers.
 
-**Why use it?**
-App Service is used for quickly building, deploying, and scaling web and mobile applications. It provides a fully managed platform that abstracts away the underlying infrastructure, allowing developers to focus on application development.
+**Why use it?** -> App Service is used for quickly building, deploying, and scaling web and mobile applications. It provides a fully managed platform that abstracts away the underlying infrastructure, allowing developers to focus on application development.
 
 ### Key Features 
 - Supports Multiple languages and frameworks. PowerShell and other scripts or executables can be run as background services.
@@ -150,9 +149,72 @@ Azure Files can be linked with Azure Database, specifically Azure SQL Database, 
 
 ---------------------------------------------------------
 
-## Assignment in practice
+## Azure SQL
 
-For the practical part of this assignment, we will take a look at *Azure Files* and *Azure Database* and perform some tasks using the Azure Portal Environment. 
+
+![sql-continuum](../00_includes/AZ-13/SQL-portfolio.png)
+
+
+Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud.
+
+- **Azure SQL Database:** -> Support modern cloud applications on an intelligent, managed database service that includes serverless compute.
+- **Azure SQL Managed Instance:** -> Modernize your existing SQL Server applications at scale with an intelligent fully managed instance as a service, with almost 100% feature parity with the SQL Server database engine. Best for most migrations to the cloud.
+- **SQL Server on Azure VMs:** -> Lift-and-shift your SQL Server workloads with ease and maintain 100% SQL Server compatibility and operating system-level access.
+
+*overview showing sql in different service environments*
+![sqliaas_sql_server_cloud_continuum](../00_includes/AZ-13/sqliaas_sql_server_cloud_continuum.png)
+
+**Relational Database**
+
+- Relational databases are structured databases that organize data into tables with rows and columns.
+- They use a fixed schema, where the structure and relationships between tables are defined in advance.
+- Data is stored in a tabular format, with each row representing a unique record, and columns representing specific attributes or properties.
+- Relationships between tables are established using keys, such as primary keys and foreign keys.
+- Relational databases are suitable for complex data relationships and transactions that require strong data consistency.
+
+*relational database example table*
+| CustomerID | Name | Age | Email |
+| ---------- | ------| ---------- | -------- |
+| 1 | Peter jan | 30 | peterjan@mail.com |
+| 2 | Kevin | 40 | Kevin@mail.com |
+| 3 | Geert | 50 | Geert@mail.com |
+
+
+**Non-Relational Databases (NoSQL):**
+
+- Non-relational databases, or NoSQL databases, are designed to handle unstructured or semi-structured data.
+- They offer more flexible data models, allowing for dynamic schemas where data can be stored in various formats like key-value pairs, documents, graphs, or wide-column stores.
+- NoSQL databases are horizontally scalable, meaning they can handle large amounts of data across distributed systems.
+- They are suitable for handling high-velocity data, big data, and scenarios where the data structure may evolve over time
+
+
+
+![rdb-vs-nrdb](../00_includes/AZ-13/rdb-vs-nrdb.png)
+
+
+-----------------------------------------------------------------
+
+### Sources used
+
+| Source       | Description |
+| ----------- | ----------- |
+| https://learn.microsoft.com/en-us/azure/cdn/cdn-overview  | content delivery network overview - MS Learn |
+| https://learn.microsoft.com/en-us/azure/app-service/overview | Azure App Service overview - MS Learn |
+| https://learn.microsoft.com/en-us/azure/dns/dns-overview | Azure DNS overview - MS Learn |
+| https://learn.microsoft.com/en-us/azure/dns/dns-faq | Azure DNS FAQ - MS Learn |
+| https://www.cloudflare.com/en-gb/learning/cdn/glossary/anycast-network/ | Anycast Explained |
+| https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-files/3-what-is-azure-file-sync | Azure File Sync - MS Learn |
+| https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-portal?tabs=azure-portal | Azure Files Quick Start - MS Learn |
+| https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql | SQL Documentation overview - MS Learn |
+| https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql | Azure SQL - MS Learn |
+| https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql | https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql |
+| https://learn.microsoft.com/en-us/azure/azure-sql/database/query-editor?view=azuresql | Connect + Query editor - MS Learn |
+
+--------------------------------------------------------------------
+
+## Assignment in practice (File Share)
+
+For the practical part of this assignment, we will take a look at *Azure Files* and perform some tasks using the Azure Portal Environment. 
 
 **Tasks to perform**
 - Finding the above mentioned services in Azure Portal.
@@ -179,34 +241,38 @@ Here we can upload files to this folder by clicking upload and selecting the fil
 
 You can connect to your Azure File Shares via the connect button on the same page. Using the SMB protocol a connection can be established from your local client to the Azure Files Folder.
 
- 
+--------------------------------------------------------------------------------------------- 
 
-## Azure (SQL) Database 
+## Assignment in practice (Azure SQL Database)
 
+For the practical part of this assignment, we will take a look at *Azure SQL* and perform some tasks using the Azure Portal Environment. 
 
------------------------------------------------------------------
+**Tasks to perform**
+- Finding the above mentioned services in Azure Portal.
+- Turning these services on.
+- Linking the services to other resources.
 
-### Sources used
+**Step 1** -> Create a SQL Database using *SQL server (logical server)* which can be obtained from the Marketplace in Azure. To stay within the scope of this assignment and keeping the costs to a minimum, I decided to create a Serverless SQL Database configured with minimal settings and services.
 
-| Source       | Description |
-| ----------- | ----------- |
-| https://learn.microsoft.com/en-us/azure/cdn/cdn-overview  | content delivery network overview - MS Learn |
-| https://learn.microsoft.com/en-us/azure/app-service/overview | Azure App Service overview - MS Learn |
-| https://learn.microsoft.com/en-us/azure/dns/dns-overview | Azure DNS overview - MS Learn |
-| https://learn.microsoft.com/en-us/azure/dns/dns-faq | Azure DNS FAQ - MS Learn |
-| https://www.cloudflare.com/en-gb/learning/cdn/glossary/anycast-network/ | Anycast Explained |
-| https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-files/3-what-is-azure-file-sync | Azure File Sync - MS Learn |
-| https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-portal?tabs=azure-portal | Azure Files Quick Start - MS Learn |
-| ----------- | ----------- |
+![create-sqldb](../00_includes/AZ-13/create-sqldb.png)
 
---------------------------------------------------------------------
+**Step 2** -> Once the SQL Server is set, I then proceeded to the resource and created a database using the ```+ create database``` button. 
 
+Since it's an serverless environment (for testing purposes) I obviously wasn't able to connect my own machine to the database.
 
+**Step 3** -> In the Portal I went on to the *Query editor (preview)* tab where I can login to my database using the credentials I used to create the SQL environment. Here I can start adding/editing the tables. A sample SQL script was provided by Azure so I tested it by entering and running the script.
 
+![query](../00_includes/AZ-13/query.png)
 
+If the SQL server and database was configured with networking capabilities (so not serverless) than we would be able to establish a connection to the database from my windows machine. I decided to take a look at this and installed an extension called **SQL Server (mssql)** available in *VS Code*.    
 
+![vs-code](../00_includes/AZ-13/vs-code.png)
 
+The process of connecting to the SQL server would be entering the ADO.net connection string that is provided in Azure under ```Connection strings```. 
 
+![vs-code](../00_includes/AZ-13/connection-strings.png)
+
+It was obviously impossible to connect to this database from my computer because of the serverless setup. But the process should've been like this. Therefore it gave me an error that was expected.
 
 
 
