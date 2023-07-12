@@ -1,4 +1,4 @@
-# AZ-14 - Containers, Support Plans, Advisor
+# AZ-14 - Containers, Support Plans, Advisor, App Configuration, Activity Log
 
 In this Assigment we will take a deeper dive into multiple Azure Services and its practices.  
 
@@ -96,6 +96,60 @@ Azure Advisor is a cloud-based service provided by Microsoft Azure that offers i
 
 -----------------------------------------------------------------
 
+## Azure App Config
+
+Azure App Configuration is a service provided by Microsoft Azure that allows developers to manage application settings and feature flags in a centralized and dynamic manner. It simplifies the process of configuration management and provides a scalable solution for applications deployed in the cloud or on-premises.
+
+In traditional application development, configuration settings such as connection strings, API keys, and feature toggles are often hardcoded within the application's code. This makes it challenging to update these settings without redeploying the entire application. Additionally, managing configurations across multiple environments and instances can be complex and error-prone.
+
+The benefits of using Azure App Configuration are numerous. It promotes a more agile and efficient development process by separating configuration settings from application code. It enables dynamic updates of configurations, reducing the need for redeployments and downtime. It also enhances scalability and availability by providing a centralized and scalable configuration store
+
+Furthermore, Azure App Configuration integrates seamlessly with other Azure services, such as Azure Functions and Azure Logic Apps, allowing developers to leverage the power of these services alongside their configuration management
+
+### Key Service Characteristics
+*Centralized Service for management of:*
+- App Settings
+- Feature Flags
+
+**Key Concepts**
+- Shared settings and feature configuration
+- Key-vault integration
+- Configuration change events
+
+### How it Works
+
+![azure-app-config](../00_includes/AZ-14/azure-app-config.png)
+
+Below an architecture view of App Config in a common environments:
+
+![azure-app-config](../00_includes/AZ-14/app-config-architecture.png)
+
+**common services/apps used with App Configuration**
+- Microservice apps (Kubernetes, Service Fabric, containerized apps, etc..)
+- Serverless apps (Azure Functions, Event driven ...)
+- Continuous Deployment pipelines
+
+-------------------------------------------------------------------
+
+## Azure Activity Log
+
+Azure Activity Log is a service that captures detailed information about the activities and events that occur within an Azure subscription. It serves as a central source of information for monitoring and troubleshooting actions taken on Azure resources.
+
+The Activity Log provides valuable insights into the who, what, when, and where of activities happening in your Azure subscription. It includes information such as the timestamp of an action, the identity of the user or service initiating the action, the specific resource involved, and the outcome of the action.
+
+The Azure Activity Log can be accessed through the Azure portal, Azure PowerShell, Azure CLI, or programmatically using Azure Monitor APIs. It can also be integrated with other monitoring and alerting tools to provide real-time notifications and automate actions based on specific events or conditions.
+
+![azure-act-layer](../00_includes/AZ-14/activity-log-layer.png)
+
+Each event in the Activity Log has a particular category
+
+*Below a table from MS Learn that describes each category*
+
+![azure-app-config](../00_includes/AZ-14/log-categories.png)
+
+
+------------------------------------------------
+
 ### Sources used
 
 | Source       | Description |
@@ -105,7 +159,10 @@ Azure Advisor is a cloud-based service provided by Microsoft Azure that offers i
 | https://learn.microsoft.com/en-us/azure/advisor/advisor-overview | Azure Advisor overview - MS Learn |
 | https://azure.microsoft.com/en-us/support/plans | Azure Support Plans |
 | https://www.youtube.com/watch?v=eyNBf1sqdBQ | Container vs VM |
-
+| https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log-schema#categories | Activity log scheme - MS Learn |
+| https://www.youtube.com/watch?v=t6m13DxUJMc | Azure App Config Explained |
+| https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview | Azure App config Overview - MS Learn |
+| ----------- | ----------- |
 
 --------------------------------------------------------------------
 
