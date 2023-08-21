@@ -26,4 +26,5 @@ def myfunction(name):
 
 name = input("Hello what is your name? ")
 
-myfunction("Sinan")
+myfunction(name)
+

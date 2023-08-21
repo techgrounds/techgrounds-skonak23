@@ -23,8 +23,8 @@ Find out what data type the output of input() is. See if it is different for dif
 
 
 # a variable is created and dependant on input from the user
-name = input("Enter a name")
-number = input("Enter a number")
+name = input("Enter a name ")
+number = input("Enter a number ")
 
 
 # Datatype of user input is determined
