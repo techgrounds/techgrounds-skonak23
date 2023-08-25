@@ -64,7 +64,20 @@ Maak wat templates aan vooraf, die je later weer terug kunt gebruiken. Bespaart 
 #### Learnings
 -
 
+---------------------------------------------------------------------
 
+### DayReport 25/08
+Grote deel van de dag gewerkt aan de Bicep Training Module (intermediate)
+Verder ging alles goed. 
 
+#### Obstacles
+Sommige deployments duren wat lang van de training module. 
 
+#### Solutions
+Op advies van Marcel gebruik gemaakt van what-if statements wat veel tijd bespaart. 
+
+#### Learnings
+Maak gebruik van 'what-if' commando's voor deployment tijdbesparing.
+
+-------------------------------------------------------
 
