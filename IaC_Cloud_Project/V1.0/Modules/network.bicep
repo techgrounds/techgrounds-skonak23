@@ -141,5 +141,12 @@ resource vnetPeering2 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@
 }
 
 
+output vnet1_id string = vnet1.id
+output vnet2_id string = vnet2.id
+output nsg1_id string = nsg_1.id
+output nsg2_id string = nsg_2.id
+output subnet1 string = vnet1.properties.subnets[0].id
+
+
 
 

@@ -1,10 +1,15 @@
 
 param location string = resourceGroup().location
-param environment string
+// param environment string
 
 
 @description('Username VM')
-param vmName string = 'VM_WebServer'
+param vmName string = 'webserver1'
+
+@description('subnet_id from vnet1')
+param subnet1 string
+
+
 
 @description('adminUserName')
 @secure()
@@ -12,7 +17,9 @@ param adminUsername string
 
 @description('Admin_PW')
 @secure()
-param adminPassword string
+param adminPasswordOrKey string
+
+param vmSize string = 'Standard_B1ls'
 
 @description('Type of authentication to use on the Virtual Machine. SSH key is recommended.')
 @allowed([
@@ -21,8 +28,10 @@ param adminPassword string
 ])
 param authenticationType string = 'password'
 
+@description('Unique DNS Name for the Public IP used to access the Virtual Machine.')
+param dnsLabelPrefix string = toLower('${vmName}-${uniqueString(resourceGroup().id)}')
 
-param diskEncryption string
+
 
 var imageReference = {
   'Ubuntu-1804': {
@@ -45,7 +54,61 @@ var imageReference = {
   }
 }
 
+
+var publicIPAddressName = '${vmName}PublicIP'
 var networkInterfaceName = '${vmName}NetInt'
+var osDiskType = 'Standard_LRS'
+
+var linuxConfiguration = {
+  disablePasswordAuthentication: true
+  ssh: {
+    publicKeys: [
+      {
+        path: '/home/${adminUsername}/.ssh/authorized_keys'
+        keyData: adminPasswordOrKey
+      }
+    ]
+  }
+}
+
+resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
+  name: publicIPAddressName
+  location: location
+  sku: {
+    name: 'Basic'
+  }
+  properties: {
+    publicIPAllocationMethod: 'Dynamic'
+    publicIPAddressVersion: 'IPv4'
+    dnsSettings: {
+      domainNameLabel: dnsLabelPrefix
+    }
+    idleTimeoutInMinutes: 4
+  }
+}
+
+resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
+  name: networkInterfaceName
+  location: location
+  properties: {
+    ipConfigurations: [
+      {
+        name: 'ipconfig1'
+        properties: {
+          subnet: {
+            id: resourceId('Microsoft.Network/virtualNetworks/subnets', subnet1)            }
+          privateIPAllocationMethod: 'Dynamic'
+          publicIPAddress: {
+            id: publicIPAddress.id
+          }
+        }
+      }
+    ]
+
+    
+  }
+}
+
 
 @description('VM_WebServer')
 resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
@@ -53,61 +116,35 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
   location: location
   properties: {
     hardwareProfile: {
-      vmSize: 'Standard_B2s'
+      vmSize: vmSize
     }
     storageProfile: {
-      imageReference: imageReference
-      }
       osDisk: {
         createOption: 'FromImage'
         managedDisk: {
-          storageAccountType: 'StandardSSD_LRS'
-          diskEncryptionSet: {
-            id: diskEncryption
-          }
+          storageAccountType: osDiskType
         }
       }
+        imageReference: imageReference['Ubuntu-1804']
+      }
       osProfile: {
-        computername: vmName
+        computerName: vmName
         adminUsername: adminUsername
-        adminPassword: adminPassword
+        adminPassword: adminPasswordOrKey
+        linuxConfiguration: ((authenticationType == 'password') ? null : linuxConfiguration)
       }
       networkProfile: {
+        networkInterfaces: [
+          {
+            id: networkInterface.id
+            properties: {
+              deleteOption: 'Delete'
+            }
+          }
+        ]
+      }
+      
         
       }
     }
-  }
 
-  resource networkInterface 'Microsoft.Network/networkInterfaces@2021-05-01' = {
-    name: networkInterfaceName
-    location: location
-    properties: {
-      ipConfigurations: [
-        {
-          name: 'ipconfig1'
-          properties: {
-            subnet: {
-              // id: subnet.id
-            }
-            privateIPAllocationMethod: 'Dynamic'
-            publicIPAddress: {
-              // id: publicIPAddress.id
-            }
-          }
-        }
-      ]
-      networkSecurityGroup: {
-        // id: networkSecurityGroup.id
-      }
-    }
-  }
-
-
-  module network 'network.bicep' = {
-    name: 'networkDeployment'
-    params: {
-      location: location
-  
-    }
-   }
-   

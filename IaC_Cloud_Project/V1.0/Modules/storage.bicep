@@ -42,5 +42,6 @@ resource storageAccount_v0 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   }
 
   output storAccEndP object = storageAccount_v0.properties.primaryEndpoints
+  output uniqueStorageName string = storagePrefix
 
 
