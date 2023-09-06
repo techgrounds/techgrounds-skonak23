@@ -96,7 +96,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
         name: 'ipconfig1'
         properties: {
           subnet: {
-            id: resourceId('Microsoft.Network/virtualNetworks/subnets', subnet1)            }
+            id: subnet1           }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
@@ -147,4 +147,5 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
         
       }
     }
+
 

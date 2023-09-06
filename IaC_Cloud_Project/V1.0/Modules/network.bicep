@@ -83,6 +83,7 @@ resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
             id: nsg_1.id
           }
         }
+        type: 'Microsoft.Network/virtualNetworks/subnets'
       }
     ]
   }
@@ -146,7 +147,7 @@ output vnet2_id string = vnet2.id
 output nsg1_id string = nsg_1.id
 output nsg2_id string = nsg_2.id
 output subnet1 string = vnet1.properties.subnets[0].id
-
+output subnet2 string = vnet2.properties.subnets[0].id
 
 
 
