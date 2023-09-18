@@ -1,4 +1,4 @@
-# Sprint CodeSnakes [21/08--01/09] - Retrospective van Marcel, Sinan(SM), Shamim en Tim
+# Sprint 1 CodeSnakes [21/08--01/09] - Retrospective van Marcel, Sinan(SM), Shamim en Tim
 
 ## Marcel:
 
@@ -65,3 +65,4 @@
 
 ### Wat kunnen wij doen om het te verbeteren?
 - Idem
+

@@ -2,7 +2,7 @@ targetScope = 'subscription'
 
 param location string = 'uksouth'
 // param environment string
-
+//az deployment sub create --location uksouth  --template-file main.bicep
 
 @description('Username VM')
 param vmName string = 'webserver1'

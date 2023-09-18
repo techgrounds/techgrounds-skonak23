@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_vm1_web_name": {
+            "value": null
+        },
+        "sshPublicKeys_vm1_web_key_name": {
+            "value": null
+        },
+        "networkInterfaces_vm1_web563_name": {
+            "value": null
+        },
+        "virtualNetworks_vm1_web_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_vm1_web_nsg_name": {
+            "value": null
+        },
+        "virtualNetworks_vnet2_externalid": {
+            "value": null
+        }
+    }
+}

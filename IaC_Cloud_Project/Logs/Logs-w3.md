@@ -1,5 +1,5 @@
-# Log W2 - IaC-Project
-## [28/08 - 01/09]
+# Log W3 - IaC-Project
+## [04/09 - 01/09]
 
 ### DayReport 28/08
 Een eerste begin gemaakt van versie 1.0 van IaC project.
@@ -83,64 +83,3 @@ Problem lag schijnbaar bij verkeerde output gegevens. verkeerde notatie. Opgelos
 .
 
 -------------------------------------------------------------------------------------
-
-## DayReport 04/09
-Begonnen aan een nieuwe module, namelijk de Webserver icm VM. 
-
-#### Obstacles
-Het was even zoeken naar de juiste parameters.
-
-#### Solutions
--
-
-#### Learnings
-De quickTemplates van Azure zijn tot zover het meest nuttig, maar de documentatie blijft beperkt.
-
----------------------------------------------------------------------------------------------
-
-## DayReport 05/09
-Het aanmaken van een Adminserver was de voornamelijkste bezigheid vandaag.
-#### Obstacles
-
-
-#### Solutions
-
-
-#### Learnings
-.
-
---------------------------------------------------------------------------------------------------
-
-## DayReport 06/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.
-
-----------------------------------------------------------------------------------------------
-
-## DayReport 07/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.
-
-------------------------------------------------------------------------------------------------------------------
-
-## DayReport 08/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.

@@ -1,28 +1,23 @@
-# Log W2 - IaC-Project
-## [28/08 - 01/09]
+# Log W3 - IaC-Project
+## [11/09 - 15/09]
 
-### DayReport 28/08
-Een eerste begin gemaakt van versie 1.0 van IaC project.
-Begonnen met het creeeren van een module met daarin de inhoud voor het aanmaken van een Storage Account
-Dit ging vrij aardig. Ik denk dat dit ook wel de minst complexe module zal zijn voor het project.
-
+### DayReport 11/09
+De laatste puzzelstukjes voor versie 1.0 van het project.
+Vandaag begonnen met het aanmaken van een KeyVault
 
 #### Obstacles
-Niet echt. Veel opzoeken nog voor de juiste instellingen.
-Informatie op vlak van Bicep (omdat het nog relatief nieuw is) is beperkt beschikbaar.
+Omdat veel permissies uit staan voor onze subscription waaronder elementen die AD nodig hebben zoals RBAC. Dit maakt sommige resources zoals Keyvault redelijk omslachtig
 
 #### Solutions
 N.V.T
 
 #### Learnings
-Nieuwe bronnen ontdekt.
+Legacy vault access policy
 
 -----------------------------------------------------------
 
-### DayReport 29/08
-Begonnen met network module. Alvast wat fundamenten neergezet.
-Veel tests dmv 'what-if' commandos.
-Ontdekkingen op vlak van bepaalde code-snippets die nut hebben voor het project.
+### DayReport 12/09
+De accesspolicies 
 
 
 #### Obstacles
@@ -37,7 +32,7 @@ Nieuwe bronnen ontdekt.
 
 -----------------------------------------------------------
 
-### DayReport 30/08
+### DayReport 13/09
 Ontdekt dat JSON-files omgezet kunnen worden naar .bicep. Dit is vrij handig aangezien de documentatie op vlak van JSON veel ruimer is.
 Verder deze dag alvast een beginnetje gemaakt voor de module Compute waar ik de VM met webserver en configuratie daarvan wil plaatsen.
 
@@ -53,7 +48,7 @@ Nieuwe methode: JSON -> BICEP
 
 -------------------------------------------------------------
 
-### DayReport 31/08
+### DayReport 14/09
 Vandaag even een solution aangemaakt voor de dit project aan de hand van de portal interface van Azure (GUI).
 Daarna de template daarvan geexporteerd naar mijzelf voor analyse. Dit geeft toch wel wat perspectief op mijn eigen code.
 Verder alle modules een beetje gefixed/bijgewerkt. Maar nog steeds werk aan de winkel.
@@ -69,7 +64,7 @@ Op forums soms wat praktischere oplossingen ontdekt voor problemen waar ik tegen
 
 -----------------------------------------------------------------------------
 
-### DayReport 01/09
+### DayReport 15/09
 Vandaag vooral beziggehouden met het corrigeren van mijn errors en wat schoonmaakwerk.
 
 #### Obstacles
@@ -83,64 +78,3 @@ Problem lag schijnbaar bij verkeerde output gegevens. verkeerde notatie. Opgelos
 .
 
 -------------------------------------------------------------------------------------
-
-## DayReport 04/09
-Begonnen aan een nieuwe module, namelijk de Webserver icm VM. 
-
-#### Obstacles
-Het was even zoeken naar de juiste parameters.
-
-#### Solutions
--
-
-#### Learnings
-De quickTemplates van Azure zijn tot zover het meest nuttig, maar de documentatie blijft beperkt.
-
----------------------------------------------------------------------------------------------
-
-## DayReport 05/09
-Het aanmaken van een Adminserver was de voornamelijkste bezigheid vandaag.
-#### Obstacles
-
-
-#### Solutions
-
-
-#### Learnings
-.
-
---------------------------------------------------------------------------------------------------
-
-## DayReport 06/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.
-
-----------------------------------------------------------------------------------------------
-
-## DayReport 07/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.
-
-------------------------------------------------------------------------------------------------------------------
-
-## DayReport 08/09
-
-#### Obstacles
-
-#### Solutions
-
-
-#### Learnings
-.
