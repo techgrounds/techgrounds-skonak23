@@ -31,6 +31,7 @@ param managed_id string = 'ManagedID-kv'
 param rgName string = 'rootRG'
 
 
+
 resource rootRG 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   name: rgName
   location: location
@@ -60,14 +61,17 @@ module network 'Modules/network.bicep' = {
 
 
 @description('Deploy Webserver')
-module Webserver 'Modules/vm-webserver.bicep' = {
+module Webserver_gateway 'Modules/app-gateway.bicep' = {
   name: vmName
   scope: rootRG
   params: {
     location: location
-    subnet1: network.outputs.subnet1 
+    vnet1_name: network.outputs.vnet1_name_webserver
+    appGwSubnetName: network.outputs.subnetGw
     adminUsername: adminUsername
     adminPasswordOrKey: adminPasswordOrKey
+    instanceCount: 1
+    vmss_Name: 'vmssWebServer'
   }
 }
 
@@ -98,15 +102,8 @@ module KeyVault 'Modules/KeyVault.bicep' = {
 }
 
 
-@description('RecoveryVault')
-module recoveryVault 'Modules/recoveryVault.bicep' = {
-  scope: rootRG
-  name: 'rcvrySvcVault1'
-  params: {
-    vaultName: 'recVault10'
-    location: location
-  }
-}
+
+
 
 
 

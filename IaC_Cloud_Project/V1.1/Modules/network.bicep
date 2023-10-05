@@ -10,13 +10,20 @@ param vnet2Name string = 'vNet2'
 var vnet1Config = {
   addressSpacePrefix: '10.10.10.0/24'
   subnetName: 'subnet1'
-  subnetPrefix: '10.10.10.0/24'
+  subnetPrefix: '10.10.10.64/26'
 }
 var vnet2Config = {
   addressSpacePrefix: '10.20.20.0/24'
   subnetName: 'subnet2'
   subnetPrefix: '10.20.20.0/24'
 }
+
+var SubnetGwConfig = {
+  addressSpacePrefix: '10.10.10.0/24'
+  subnetName: 'subnetGw'
+  subnetPrefix: '10.10.10.128/26'
+}
+
 
 resource nsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
   name: 'nsg_1'
@@ -48,6 +55,33 @@ resource nsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
           destinationPortRange: '80'
           sourceAddressPrefix: '*'
           destinationAddressPrefix: '*'
+        }
+      }
+      {
+        name: 'https-webserver'     // Application Gateway 
+        properties: {
+          access: 'Allow'
+          direction: 'Inbound'
+          priority: 102
+          protocol: 'Tcp'
+          sourcePortRange: '*'
+          destinationPortRange: '443'
+          sourceAddressPrefix: '*'
+          destinationAddressPrefix: '*'
+        }
+      }
+      {
+        name: 'allow-appgw-ports'
+        properties: {
+          description: 'Allow incoming traffic for Application Gateway'
+          protocol: 'Tcp'
+          sourcePortRange: '*'
+          destinationPortRange: '65200-65535'  // Ports used by Application Gateway
+          sourceAddressPrefix: '*'
+          destinationAddressPrefix: '*'
+          access: 'Allow'
+          priority: 103  // You can adjust the priority as needed to ensure this rule is applied appropriately
+          direction: 'Inbound'
         }
       }
     ]
@@ -105,12 +139,17 @@ resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
       {
         name: vnet1Config.subnetName
         properties: {
-          addressPrefix: vnet1Config.subnetPrefix
+          addressPrefix: vnet1Config.subnetPrefix 
+        }
+      }
+      {
+        name: SubnetGwConfig.subnetName
+        properties: {
+          addressPrefix: SubnetGwConfig.subnetPrefix
           networkSecurityGroup: {
             id: nsg_1.id
           }
-        }
-        type: 'Microsoft.Network/virtualNetworks/subnets'
+        } 
       }
     ]
   }
@@ -140,6 +179,7 @@ resource vnet2 'Microsoft.Network/virtualNetworks@2023-04-01' = {
   }
 }
 
+
 resource VnetPeering1 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@2023-04-01' = {
   parent: vnet1
   name: '${vnet1Name}-${vnet2Name}'
@@ -153,6 +193,7 @@ resource VnetPeering1 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@
     }
   }
 }
+
 
 resource vnetPeering2 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@2023-04-01' = {
   parent: vnet2
@@ -169,12 +210,16 @@ resource vnetPeering2 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@
 }
 
 
+output vnet1_name_webserver string = vnet1Name
 output vnet1_id string = vnet1.id
 output vnet2_id string = vnet2.id
 output nsg1_id string = nsg_1.id
 output nsg2_id string = nsg_2.id
 output subnet1 string = vnet1.properties.subnets[0].id
 output subnet2 string = vnet2.properties.subnets[0].id
+output subnetGw string = vnet1.properties.subnets[1].id
+
+
 
 
 

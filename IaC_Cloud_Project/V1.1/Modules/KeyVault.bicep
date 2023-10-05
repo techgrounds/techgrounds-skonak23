@@ -9,7 +9,7 @@ param location string = resourceGroup().location
 param managed_id string = 'userIDx${uniqueString(resourceGroup().id)}'
 
 @description('Specifies the key vault name')
-param keyVaultName string = 'Vault${uniqueString(resourceGroup().id)}'         //change name for conflict ?
+param keyVaultName string = 'KVS${uniqueString(resourceGroup().id)}'         //change name for conflict ?
 
 @description('Specifies name of secrets')
 param secretName string
@@ -56,7 +56,7 @@ resource KeyVault 'Microsoft.KeyVault/vaults@2023-02-01' = {
         tenantId: tenantId
       }
     ]
-    createMode: 'recover'
+    createMode: 'default'
     enabledForDeployment: true
     enabledForDiskEncryption: true
     enabledForTemplateDeployment: true
